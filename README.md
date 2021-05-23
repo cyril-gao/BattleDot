@@ -14,7 +14,7 @@ For example: A is bombing B is bombing C is bombing D is bombing A. If B hits C'
 B is now bombing D.
 ```
 
-#### It is a multi-threaded program. We run the command "java -jar <path>/BattleDot-1.0-SNAPSHOT.jar" to launch the program. Each instance will have an uid.
+#### It is a multi-threaded program. We run the command "java -jar folder-name/BattleDot-1.0-SNAPSHOT.jar" to launch the program. Each instance will have an uid.
 
 #### Each intance can communicate with other intances to create a game group in a small local area network. The first instance needs to wait for other instances.
 
