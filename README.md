@@ -1,4 +1,4 @@
-#### The program is implemented in Java. It implements such a game:
+##### The program is implemented in Java. It implements such a game:
 ```
 Players are connected in a ring: A is bombing B who is bombing C, ... who is bombing Z who is bombing A.
 
@@ -14,15 +14,15 @@ For example: A is bombing B is bombing C is bombing D is bombing A. If B hits C'
 B is now bombing D.
 ```
 
-#### It is a multi-threaded program. We run the command "java -jar folder-name/BattleDot-1.0-SNAPSHOT.jar" to launch the program. Each instance will have an uid.
+##### It is a multi-threaded program. We run the command "java -jar folder-name/BattleDot-1.0-SNAPSHOT.jar" to launch the program. Each instance will have an uid.
 
-#### Each intance can communicate with other intances to create a game group in a small local area network. The first instance needs to wait for other instances.
+##### Each intance can communicate with other intances to create a game group in a small local area network (NOTE: multicast cannot be disabled. If your firewall disables multicast, you need to change your firewall configuration, or temporarily stop the firewall). The first instance needs to wait for other instances.
 
-#### When there are at least 2 instances, we can begin the game.
+##### When there are at least 2 instances, we can begin the game.
 
-#### We input "#row #col" (such as "5 2") and then press Enter to attack our target.
+##### We input "#row #col" (such as "5 2") and then press Enter to attack our target.
 
-#### When there are at least 3 instances, we can input "#uid1 #uid2" plus the Enter key to relocate ourselves in the circle.
+##### When there are at least 3 instances, we can input "#uid1 #uid2" plus the Enter key to relocate ourselves in the circle.
 
 
 #### How to compile the Java code:
