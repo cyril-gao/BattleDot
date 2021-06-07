@@ -32,10 +32,6 @@ B is now bombing D.
 * run the command "mvn package" under the folder of the project.
 
 
-#### OS:
-* we can run it in Linux and Windows.
-
-
 #### Log file:
 * when we run the command, if the current working folder is current-working-folder, you may find the log files under current-working-folder/logs
 
