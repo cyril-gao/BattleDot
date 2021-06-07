@@ -1,4 +1,4 @@
-##### The program is implemented in Java. It uses distributed hash table to implement such a game:
+##### The program is implemented in Java. It uses the consistent hashing and multicast techniques to implement such a game:
 ```
 Players are connected in a ring: A is bombing B who is bombing C, ... who is bombing Z who is bombing A.
 
