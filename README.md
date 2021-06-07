@@ -1,4 +1,4 @@
-##### The program is implemented in Java. It uses the consistent hashing and multicast techniques to implement such a game:
+##### The program uses the consistent hashing and multicast techniques to implement such a game:
 ```
 Players are connected in a ring: A is bombing B who is bombing C, ... who is bombing Z who is bombing A.
 
@@ -16,7 +16,7 @@ B is now bombing D.
 
 ##### It is a multi-threaded program. We run the command "java -jar folder-name/BattleDot-1.0-SNAPSHOT.jar" to launch the program. Each process has an uid.
 
-##### Each process can communicate with other processes to create a game group in a small local area network (NOTE: multicast cannot be disabled. If your firewall disables multicast, you need to change your firewall configuration, or temporarily stop the firewall). The first process needs to wait for other processes.
+##### Each process can communicate with other processes to create a game group in a small local area network (NOTE: multicast cannot be disabled. If our firewall disables multicast, we need to change the firewall configuration, or temporarily stop the firewall). The first process needs to wait for other processes.
 
 ##### When there are at least 2 processes, we can begin the game.
 
