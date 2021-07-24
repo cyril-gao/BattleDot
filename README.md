@@ -1,17 +1,19 @@
 ##### The program uses the consistent hashing and multicast techniques to implement such a game:
 ```
-Players are connected in a ring: A is bombing B who is bombing C, ... who is bombing Z who is bombing A.
+Players are connected in a ring: A is bombing B who is bombing C,
+... who is bombing Z who is bombing A.
 
-Each player has a 10x10 grid of "dots" where one "single-dot ship" is positioned randomly. A player loses
-if this ship is bombed.
+Each player has a 10x10 grid of "dots" where one "single-dot ship"
+is positioned randomly. A player loses if this ship is bombed.
 
-Players cannot see each other's grids directly. Each player randomly selects a dot location on the enemy
-grid to bomb and sends the bomb to the enemy. If the bomb lands in the enemy's dot-ship, the enemy dies;
-otherwise, it lives. When a player dies, relevant neighbors are matched up so that their unfinished games
-can continue.
+Players cannot see each other's grids directly. Each player randomly
+selects a dot location on the enemy grid to bomb and sends the bomb to
+the enemy. If the bomb lands in the enemy's dot-ship, the enemy dies;
+otherwise, it lives. When a player dies, relevant neighbors are matched
+up so that their unfinished games can continue.
 
-For example: A is bombing B is bombing C is bombing D is bombing A. If B hits C's ship, B wins, C loses/dies.
-B is now bombing D.
+For example: A is bombing B is bombing C is bombing D is bombing A.
+If B hits C's ship, B wins, C loses/dies. B is now bombing D.
 ```
 
 ##### It is a multi-threaded program. We run the command "java -jar folder-name/BattleDot-1.0-SNAPSHOT.jar" to launch the program. Each process has an uid.
